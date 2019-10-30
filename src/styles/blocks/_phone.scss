@@ -1,0 +1,26 @@
+.phone {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a6a096;
+
+  &__text {
+    color: #fff;
+    letter-spacing: 1.2px;
+    font: {
+      size: 24px;
+      weight: 700;
+    }
+  }
+
+  &__phone {
+    color: #004a80;
+    letter-spacing: 1.4px;
+    font: {
+      size: 28px;
+      family: "Raleway", serif;
+      weight: 900;
+    }
+  }
+}

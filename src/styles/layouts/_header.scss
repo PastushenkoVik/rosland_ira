@@ -1,0 +1,46 @@
+@import "../utils";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: {
+    top: 20px;
+    bottom: 20px;
+  }
+  @include for-tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 100%;
+
+    @include for-tablet {
+      width: unset;
+    }
+  }
+
+  &__contact {
+    @include for-phone {
+      margin: 40px 0;
+    }
+
+    text-align: center;
+  }
+
+  &__text {
+    color: #a6a096;
+    font-size: 21px;
+    letter-spacing: 0.75px;
+  }
+
+  &__phone {
+    color: $golden-font-color;
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 0.1px;
+  }
+}

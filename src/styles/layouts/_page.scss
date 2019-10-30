@@ -1,0 +1,50 @@
+@import "../utils";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: $body-color;
+  font: {
+    family: "Roboto Slab", serif;
+    style: normal;
+    size: 14px;
+    weight: 400;
+  }
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  z-index: 200;
+  position: relative;
+  background-color: #fff;
+}
+
+.container {
+  margin: 0 20px;
+
+  @include for-desktop {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
