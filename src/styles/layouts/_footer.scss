@@ -1,0 +1,100 @@
+@import "../utils";
+
+.footer {
+  background-color: $golden-font-color;
+  padding: 50px 0;
+  @include for-tablet {
+    padding: 21px 0 113px 30px;
+  }
+
+  &--container {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+
+    @include for-tablet {
+      grid-template-columns: 540px 380px;
+    }
+  }
+
+  &__aside-right {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    @include for-phone {
+      grid-row: 1;
+    }
+  }
+
+  &__aside-left {
+    @include for-phone {
+      grid-row: 2;
+    }
+  }
+
+  &__phone {
+    color: $link-color;
+    border-top: 1px solid $link-color;
+    border-bottom: 1px solid $link-color;
+    margin: 20px 0 15px;
+    padding: 5px 0;
+    font: {
+      family: "Raleway", serif;
+      size: 20px;
+      weight: 700;
+    }
+  }
+
+  &__img {
+    padding: 5px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__menu {
+    list-style: none;
+    width: 49%;
+
+    &-item {
+      line-height: 1;
+    }
+
+    &-link {
+      line-height: 1;
+      color: #fff;
+      cursor: pointer;
+      font: {
+        size: 11px;
+        weight: 600;
+      }
+    }
+  }
+
+  &__text {
+    padding-top: 20px;
+    color: #fff;
+    font-size: 7px;
+    font-weight: 500;
+
+    &:last-of-type {
+      padding-top: 10px;
+    }
+  }
+
+  &__sn {
+    margin-bottom: 15px;
+
+    img {
+      margin-right: 8px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.content {
+
+  &__text {
+    padding-top: 20px;
+  }
+
+  &__link {
+    display: block;
+    color: $link-color;
+    cursor: pointer;
+    text-decoration: underline;
+
+    &--inline {
+      display: inline;
+    }
+  }
+
+  &__title {
+    text-align: left;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    border-top: 1px solid $golden-font-color;
+  }
+
+  &__img-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include for-tablet {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+
+  &__img {
+    padding-top: 25px;
+    margin-right: 10px;
+  }
+
+  .content__list {
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+}

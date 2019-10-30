@@ -1,0 +1,39 @@
+@import "../utils";
+
+.moto {
+  background-color: $dark-gray-bg;
+
+  &--container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @include for-tablet {
+      padding: unset;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 0.9px;
+
+    @include for-tablet {
+      width: 70%;
+    }
+
+    span {
+      font: {
+        style: normal;
+        weight: 600;
+      }
+    }
+  }
+}

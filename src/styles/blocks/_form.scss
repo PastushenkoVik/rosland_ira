@@ -1,0 +1,127 @@
+@import "../utils";
+
+.form {
+  padding: 25px 21px 20px;
+  background: #e7e7e7 url("../images/logo_symbol.png") no-repeat center right;
+  background-size: 90%;
+
+  &__title {
+    color: #fff;
+    background-color: #004a80;
+    padding: 25px 23px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.3px;
+  }
+
+  .input {
+    &-text {
+      cursor: pointer;
+      height: 30px;
+      width: 100%;
+      outline: none;
+      border: 1px solid #a6a096;
+      margin-bottom: 10px;
+      padding-left: 11px;
+      padding-right: 11px;
+
+      &:focus {
+        border: 1px solid $link-color;
+      }
+
+      &::placeholder {
+        color: #a6a096;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+      }
+    }
+
+    &-narrow {
+      width: calc(50% - 5px);
+
+      &:last-of-type {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  &__group-title {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #252525;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &__text {
+    margin-top: 10px;
+    margin-bottom: 17px;
+    color: #252525;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+
+  &__buton-group {
+    text-align: center;
+  }
+
+  &__button {
+    cursor: pointer;
+    width: 185px;
+    height: 44px;
+    padding-left: 55px;
+    padding-right: 55px;
+    border: 1px solid #fff;
+    background-color: #004a80;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.22px;
+  }
+
+  &__radio-label {
+    position: relative;
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 36px;
+    padding-bottom: 15px;
+
+    .label-bold {
+      display: block;
+      font-weight: 700;
+      line-height: 12px;
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #a6a096;
+      background-color: #fff;
+
+      &:after {
+        content: "\2713";
+        display: none;
+        font-size: 16px;
+        font-weight: 700;
+        color: $golden-font-color;
+      }
+    }
+
+    input[name="gold-option"] {
+      display: none;
+
+      &:checked ~ .checkmark:after {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

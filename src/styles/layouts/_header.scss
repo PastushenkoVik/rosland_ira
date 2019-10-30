@@ -32,7 +32,10 @@
 
   &__text {
     color: #a6a096;
-    font-size: 21px;
+    font: {
+      size: 21px;
+      weight: 900;
+    }
     letter-spacing: 0.75px;
   }
 

@@ -1,0 +1,41 @@
+@import "../utils";
+
+.coins {
+  padding: 24px 0;
+
+  @include for-desktop {
+    padding: 24px 136px 40px;
+  }
+
+  &--container {
+    background-color: $gray-bg;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+
+    @include for-tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__item {
+    width: 100%;
+  }
+
+  &__title {
+    position: relative;
+    bottom: -10px;
+    text-align: center;
+    color: #333;
+    font: {
+      size: 12px;
+      weight: 600;
+    }
+    line-height: 18px;
+    letter-spacing: 0.12px;
+  }
+}

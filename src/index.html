@@ -11,29 +11,31 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900|Roboto+Slab:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
   </head>
+
   <body>
     <header class="header container">
-      <img class="header__logo" src="./images/logo.png" alt="logo">
+      <img class="header__logo" src="./images/logo.png" alt="rosland capital">
       <div class="header__contact">
         <p class="header__text">Get a Quote</p>
         <a href="tel:1 800 679 6482" class="header__phone">1-800-679-6482</a>
       </div>
     </header>
 
-    <div class="hero">
+    <section class="hero">
       <div class="container hero--container">
         <div class="hero__aside-left">
-          <img class="hero__photo" src="./images/william-devane.png" alt="william devane">
           <p class="hero__moto">
             You’ve worked hard for your money and you don't want to lose it now,
             so protect it with a Rosland Capital precious metal backed IRA.
             <span>– William DeVane</span>
           </p>
+          <img class="hero__photo" src="./images/william-devane.png" alt="william devane">
         </div>
       </div>
-    </div>
+    </section>
+    <!-- /hero -->
 
-    <div class="contact-form container">
+    <section class="contact-form container">
       <div class="contact-form__aside-left">
         <h1 class="contact-form__title">Rosland Capital Precious Metal IRA</h1>
         <p class="contact-form__text">
@@ -46,21 +48,370 @@
           Call now to get a free IRA transfer kit and for limited time only transferring or rolling over your IRA
           is free for new customers! <span>1.800.679.6482</span>
         </p>
+        <div class="contact-form__arrow">
+          <p>Request a FREE IRA Transfer Kit!</p>
+        </div>
       </div>
       <div class="contact-form__aside-rigth">
-      </div>
-    </div>
+        <p class="form__title">
+          Get Started Now!
+        </p>
+        <form class="form">
+          <input class="input-text" placeholder="Name" type="text">
+          <input class="input-text" placeholder="Email" type="email">
+          <input class="input-text" placeholder="Phone Number" type="tel">
+          <input class="input-text" placeholder="Address" type="text">
+          <input class="input-text input-narrow" placeholder="City" type="text">
+          <input class="input-text input-narrow" placeholder="Zipcode" type="text">
 
-    <div class="phone">
+          <p class="form__group-title">Choose from the options below:</p>
+
+          <label class="form__radio-label">
+            <span class="label-bold">FREE GOLD GUIDE</span>
+            Learn about the difference between numismatic and bullion coins and which option is best for you.
+            <input type="radio" name="gold-option">
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="form__radio-label">
+            <span class="label-bold">FREE PRECIOUS METALS IRA</span>
+            Learn about the difference between numismatic and bullion coins and which option is best for you.
+            <input type="radio" name="gold-option">
+            <span class="checkmark"></span>
+          </label>
+
+          <p class="form__text">
+            By submitting this request you confirm that Rosland Capital may send you the free information
+            checked above and that you are expressly authorizing Rosland Capital to contact you at the telephone
+            number above, irrespective of whether or not such telephone number appears in any state or national
+            Do Not Call registries.
+          </p>
+          <div class="form__buton-group">
+            <button class="form__button" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- /contact-form -->
+
+    <section class="phone">
       <p class="phone__text">
         For a complete list of available coins call:
         <a href="tel:1 800 679 6482" class="phone__phone">1-800-679-6482</a>
       </p>
-    </div>
+    </section>
+    <!-- /phone -->
 
-    <div class="coins container">
+    <section class="coins--container">
+      <div class="container coins">
+        <h2 class="title-golden">
+          Here are a few of our favorite permissable IRA coins
+        </h2>
 
+        <div class="coins__grid">
+          <div class="coins__cell">
+            <img
+              class="coins__item"
+              src="./images/american_gold_eagle.png"
+              alt="american gold eagle"
+            >
+            <h3 class="coins__title">American Gold Eagle</h3>
+          </div>
+
+          <div class="coins__cell">
+            <img
+              class="coins__item"
+              src="./images/american_silver.png"
+              alt="american silver eagle"
+            >
+            <h3 class="coins__title">American Silver Eagle</h3>
+          </div>
+
+          <div class="coins__cell">
+            <img
+              class="coins__item"
+              src="./images/austriann_phil.png"
+              alt="american silver eagle"
+            >
+            <h3 class="coins__title">Austrian Philharmonic</h3>
+          </div>
+
+          <div class="coins__cell">
+            <img
+              class="coins__item"
+              src="./images/canadian_gold.png"
+              alt="american silver eagle"
+            >
+            <h3 class="coins__title">Canadian Gold Maple Leaf</h3>
+          </div>
+
+          <div class="coins__cell">
+            <img
+              class="coins__item"
+              src="./images/canadian_silver.png"
+              alt="american silver eagle"
+            >
+            <h3 class="coins__title">Canadian Silver Maple Leaf</h3>
+          </div>
+
+          <div class="coins__cell">
+            <img
+              class="coins__item"
+              src="./images/buffalo.png"
+              alt="american silver eagle"
+            >
+            <h3 class="coins__title">American Gold Buffalo</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /coins -->
+
+    <section class="content container">
+      <p class="content__text">
+        Rosland Capital understands the difficulty investors face trying to protect their retirement savings
+        in today’s unstable market. That’s why Rosland Capital offers the Rosland Capital Gold and Precious Metals IRA,
+        which is backed by physical assets, not paper investments. Precious metals offer a hedge to help your
+        portfolio hold its value – and will provide support to you when your time comes to retire.
+      </p>
+      <p class="content__text">
+        Most individuals saving for retirement most likely qualify for a precious metals IRA, but are unaware that
+        this choice even exists. Since 1986, the IRS has allowed individuals to hold precious metals with their IRA,
+        offering a hedge against stock market volatility and decline. Common types of retirement plans that may
+        qualify include traditional and Roth IRA’s, SEP IRA’s, 401(K)s and 403(B)s.
+      </p>
+      <p class="content__text">
+        Establishing a Rosland Capital Gold and Precious Metals IRA is as easy as completing a few forms. Simply
+        call (800)679-6482 and a Rosland Capital representative will guide you through the complete process and
+        answer any questions you may have. The IRA can be implemented immediately, either by starting a new IRA
+        or the transfer of an existing retirement plan. You may select to transfer all or a portion of your existing
+        retirement account to a Rosland Capital Gold and Precious Metals IRA. It is important to note that there are
+        no tax implications or penalties when transferring assets from one qualified retirement plan to another.
+        However, as with any investment vehicle, you should consult a tax professional regarding your
+        specific tax situation.
+      </p>
+      <a href="#" class="content__text content__link">
+        Follow Rosland Capital on Twitter
+      </a>
+      <h3 class="title-golden content__title">
+        Making Contributions to Your IRA
+      </h3>
+      <p class="content__text">
+        As with traditional IRA’s, anyone under age 70½ who earns income can make annual contributions to a Rosland
+        Capital Gold and Precious Metals IRA. These contributions can be made anytime during the year that you claim
+        the deduction, or during the following year before you file your next income tax return. If you file for an
+        extension, you must make your contribution on or before April 15 of the following year. Currently, the maximum
+        contribution for most IRA’s is $5,500 per year. However, taxpayers age 50 or older may contribute $6,500
+        annually; and SEP plans have higher contribution limits. The simplest way to make a contribution to your
+        Rosland Capital Gold and Metals IRA is via a direct rollover, transfer, or a distribution from an employer
+        retirement plan that is sent directly to your IRA. Because some of these transactions may be subject to taxes,
+        Rosland Capital recommends consulting your tax advisor on these matters.
+      </p>
+      <h3 class="title-golden content__title">
+        Withdrawing From Your IRA
+      </h3>
+      <p class="content__text">
+        As with traditional IRAs, you can begin making withdrawals from your Rosland Capital Gold and Precious
+        Metals IRA at age 59½. Funds withdrawn before that date are subject to a 10 percent penalty, except under
+        certain circumstances. The IRS requires you to begin withdrawals at age 70½.
+      </p>
+      <h3 class="title-golden content__title">
+        The Rosland Capital Guide to Gold
+      </h3>
+      <div class="content__img-block">
+        <img class="content__img" src="./images/guide_to_gold.png" alt="gud to gold">
+        <p class="content__text">
+          In 2015, Rosland Capital released
+          <a href="#" class="content__link content__link--inline">
+            The Rosland Capital Guide to Gold
+          </a>
+          to educate people on the benefits in adding gold as part of their asset portfolios. Part of the sale of
+          each book is donated to the American Red Cross.
+        </p>
+      </div>
+      <h3 class="title-golden content__title">
+        About Rosland Capital
+      </h3>
+      <p class="content__text">
+        Rosland Capital was founded in 2008 by
+        <a href="#" class="content__link content__link--inline">Marin Aleksov</a>
+        and strives to educate people on the benefits of protecting their wealth through gold, silver and precious metals.
+        <a href="#" class="content__link content__link--inline">
+          Rosland Capital has an A rating from the Better Business Bureau
+        </a>
+        and also offers Precious Metal-backed IRAs.
+        <a href="#" class="content__link content__link--inline">
+          Click here for Rosland Capital recommendations.
+        </a>
+      </p>
+
+      <ul class="content__list">
+        <li>
+          <a href="#" class="content__link content__link--inline">
+            Rosland Captial | CrunchBase
+          </a>
+        </li>
+        <li>
+          <a href="#" class="content__link content__link--inline">
+            Rosland Capital videos on YouTube, starring William DeVane
+          </a>
+        </li>
+        <li>
+          <a href="#" class="content__link content__link--inline">
+            Rosland Capital Reviews
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- /content -->
+
+    <section class="ask">
+      <div class="container ask--container">
+        <img class="ask__img" src="./images/hear.png" alt="ask the question">
+        <div>
+          <h3 class="title-golden ask__title">
+            Ask an Expert
+          </h3>
+          <p class="ask__text">
+            Our experts are dedicated to finding the right precious metals to suit your specific needs. When you call
+            us, you’ll work with your very own expert who will present you with personalized options and explain in
+            detail the strategy behind each one. We’ll help you determine the right option to accomplish your goals,
+            and provide you with the information necessary to decide if purchasing precious metals is right for you.
+          </p>
+          <p class="ask__text">
+            After you speak with us, we encourage you to take time to carefully consider each option. And if you have
+            any questions along the way, please do not hesitate to give us a call. We’re ready to answer any question
+            you may have. At Rosland Capital, we want to ensure that you’re fully informed, as we believe that’s the
+            only way to guarantee you’ll be completely comfortable with your decision.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- /ask -->
+
+    <section class="moto">
+      <div class="container moto--container">
+        <p class="moto__text">
+          “All currencies are headed for a fall. The best safeguard for investors is at
+          least 10%-15% of assets in physical gold.”
+          <span>-Jeffery Nichols</span>
+        </p>
+      </div>
+    </section>
+    <!-- /moto -->
+
+    <div class="container">
+      <section class="awards">
+        <div class="awards__cell">
+          <img src="./images/alliance.png" alt="alliance">
+        </div>
+        <div class="awards__cell">
+          <img src="./images/bbb.png" alt="bbb">
+        </div>
+        <div class="awards__cell">
+          <img src="./images/ira.png" alt="ira">
+        </div>
+      </section>
     </div>
+    <!-- /awards -->
+
+    <footer class="footer">
+      <div class="container footer--container">
+        <div class="footer__aside-left">
+          <div class="footer__sn">
+            <img src="./images/fb.png" alt="facebook">
+            <img src="./images/tw.png" alt="twitter">
+            <img src="./images/yt.png" alt="youtube">
+            <img src="./images/in.png" alt="instagram">
+          </div>
+
+          <nav>
+            <ul class="footer__menu">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">
+                  Products
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">
+                  Reviews
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">
+                  Why Buy Gold
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">
+                  News
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">
+                  About
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">
+                  Contact
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">
+                  Glossary
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__menu">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">
+                  Forms
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">
+                  Terms of Service
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">
+                  Customer Agreement
+                </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">
+                  CA Supplu Chains Disclosure
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <p class="footer__text">
+            *By submitting this request you confirm that Rosland Capital may send you the free information checked
+            above and that you are expressly autorizing Rosland Capital to contact you at the telephone number above,
+            irrespective of whether or not such telephone number in any state or national Do Not Call registries.
+          </p>
+          <p class="footer__text">
+            © 2018 Rosland Capital LLC. All rights reserved
+          </p>
+        </div>
+
+        <div class="footer__aside-right">
+          <img class="footer_logo" src="./images/footer-logo.png" alt="rosland capital">
+          <a href="tel:1-888-742-7852" class="footer__phone">CALL NOW 1-888-742-7852</a>
+          <img class="footer__img" src="./images/accredited.png" alt="accredited">
+          <img class="footer__img" src="./images/bca.png" alt="business consumer alliance">
+          <img class="footer__img" src="./images/capitol.png" alt="capitol">
+          <img class="footer__img" src="./images/ngc.png" alt="ngc">
+          <img class="footer__img" src="./images/pcgs.png" alt="pcgs">
+        </div>
+      </div>
+    </footer>
 
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
